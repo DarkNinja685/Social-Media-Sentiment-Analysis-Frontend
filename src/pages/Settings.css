@@ -1,0 +1,86 @@
+/* General Styling */
+.settings-container {
+  max-width: 400px;
+  margin: 80px auto; /* Add top margin to prevent overlap with navbar */
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative; /* Ensures it doesn't interfere with navbar */
+  z-index: 1;
+}
+
+/* Dark Mode Styling */
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode .settings-container {
+  background: #1e1e1e;
+  color: white;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Setting Option */
+.setting-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+.setting-option label {
+  font-weight: 600;
+}
+
+/* Toggle Switch */
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Language Dropdown */
+select {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+}
+
+.dark-mode select {
+  background-color: #333;
+  color: white;
+  border: 1px solid #888;
+}
+
+/* Save Button */
+.save-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #007bff;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.save-btn:hover {
+  background: #0056b3;
+}
+
+/* Dark Mode Save Button */
+.dark-mode .save-btn {
+  background: #0056b3;
+}
+
+.dark-mode .save-btn:hover {
+  background: #003f80;
+}

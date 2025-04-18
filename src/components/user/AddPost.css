@@ -1,0 +1,112 @@
+/* 🌟 Page Background
+body {
+  background: linear-gradient(135deg, #f0f5ff, #dbeafe);
+  font-family: "Poppins", sans-serif;
+  color: #2c3e50;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+} */
+
+/* 📝 Form Container */
+
+/* .add-post-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+} */
+
+/* h2 {
+  color: #2563eb;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+} */
+/*
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 14px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #f0f4f8;
+  color: #2c3e50;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #7d8ca3;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #2563eb;
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(37, 99, 235, 0.3);
+}
+
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+input[type="file"] {
+  border: none;
+  background: #e6eef9;
+  padding: 12px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #2c3e50;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+input[type="file"]::file-selector-button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: bold;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background: #1d4ed8;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .add-post-container {
+    width: 90%;
+    padding: 20px;
+  }
+} */

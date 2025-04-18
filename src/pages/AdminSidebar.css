@@ -1,0 +1,36 @@
+.admin-sidebar {
+  width: 240px;
+  background-color: #2c3e50;
+  color: white;
+  height: 100%;
+  transition: width 0.3s ease;
+  overflow: auto;
+  padding: 1rem 0;
+}
+
+.admin-sidebar.closed {
+  width: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.admin-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.admin-sidebar ul li {
+  padding: 15px 20px;
+  transition: background 0.3s;
+}
+
+.admin-sidebar ul li:hover {
+  background-color: #34495e;
+}
+
+.admin-sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}

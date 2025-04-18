@@ -1,0 +1,78 @@
+/* Container for each sentiment section */
+.sentiment-section {
+  margin-bottom: 3rem;
+}
+
+/* Grid layout for cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+/* Individual card */
+.topic-card {
+  background-color: #ffffff; /* light background for the card */
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.topic-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Sentiment card styling */
+.sentiment-card {
+  padding: 1rem;
+  background-color: #f9f9f9; /* soft grey background */
+  border-radius: 10px;
+  color: #333; /* dark text for readability */
+  border-left: 5px solid #ccc; /* default fallback */
+}
+
+.sentiment-card.positive {
+  border-left: 6px solid #4caf50;
+  background-color: #e8f5e9; /* light green */
+}
+
+.sentiment-card.neutral {
+  border-left: 6px solid #ff9800;
+  background-color: #fff8e1; /* soft yellow */
+}
+
+.sentiment-card.negative {
+  border-left: 6px solid #f44336;
+  background-color: #ffebee; /* light red */
+}
+
+.topic-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.post-count,
+.sentiment-label {
+  font-size: 0.9rem;
+  margin: 0.25rem 0;
+}
+
+/* Report button */
+.report-btn {
+  margin-top: 0.8rem;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+}
+
+.report-btn:hover {
+  background-color: #d32f2f;
+}

@@ -1,0 +1,178 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 1rem 2rem;
+  background: linear-gradient(
+    90deg,
+    #ff69b4,
+    #8a2be2,
+    #000000
+  ); /* pink to purple to black */
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Menu Button */
+.menu-button {
+  font-size: 2.2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-right: 1.2rem;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.menu-button:hover {
+  color: #ffd700; /* golden on hover */
+  transform: scale(1.2);
+}
+
+/* Logo */
+.navbar-logo {
+  font-size: 1.7rem;
+  font-weight: bold;
+  flex-grow: 1;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Navbar Links */
+.navbar-links {
+  display: flex;
+
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.navbar-links a,
+.navbar-links span {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover,
+.navbar-links span:hover {
+  color: #ff69b4; /* pink on hover */
+}
+
+/* Dropdown Menus */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  color: black;
+  padding: 0.8rem 1rem;
+  display: none;
+  border-radius: 8px;
+  min-width: 180px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  margin: 0.5rem 0;
+}
+
+.dropdown-menu a {
+  color: #333;
+  font-weight: 500;
+}
+
+.dropdown-menu a:hover {
+  color: #8a2be2; /* deep purple hover */
+}
+.navbar,
+.menu-button,
+.navbar-links a {
+  transition: all 0.3s ease;
+}
+/* Search Container */
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Search Input */
+.search-input {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* When user focuses on search */
+.search-input:focus {
+  border-color: #ff69b4; /* pink border on focus */
+  box-shadow: 0 0 4px #ff69b4;
+}
+
+/* Search Button */
+.search-button {
+  padding: 0.4rem 0.8rem;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #8a2be2; /* purple on hover */
+}
+/* Suggestion Dropdown */
+.search-wrapper {
+  position: relative;
+}
+
+.suggestions-dropdown {
+  position: absolute;
+  top: 2.3rem;
+  left: 0;
+  right: 0;
+  background-color: white;
+  color: black;
+  list-style: none;
+  padding: 0.5rem;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.suggestions-dropdown li {
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.suggestions-dropdown li:hover {
+  background-color: #f0f0f0;
+}

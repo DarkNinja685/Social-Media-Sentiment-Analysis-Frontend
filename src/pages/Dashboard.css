@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; /* Plain white */
+  font-family: "Poppins", sans-serif;
+  color: #000000; /* Switch text color to black for contrast */
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Dashboard Container */
+.dashboard {
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px 20px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Heading */
+.dashboard h1 {
+  font-size: 3rem;
+  color: #f472d0; /* Pink-purple hue */
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Analyze Button */
+.analyze-btn {
+  background: linear-gradient(90deg, #c084fc, #9333ea);
+  color: #fff;
+  border: none;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 15px rgba(147, 51, 234, 0.4);
+  margin-bottom: 20px;
+}
+
+.analyze-btn:hover {
+  background: linear-gradient(90deg, #a855f7, #7c3aed);
+  transform: scale(1.05);
+}
+
+.analyze-btn:disabled {
+  background: #5b5b5b;
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Status / Info Text */
+.dashboard p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #e0e0e0;
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto 30px;
+}
+
+/* Trending Chart Container */
+.trending-chart-container {
+  width: 100vw;
+  max-width: 100%;
+  margin-top: 20px;
+  padding: 20px 0;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+}
+
+/* Chart Title */
+.trending-chart-container h2 {
+  text-align: center;
+  color: #f0abfc;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+/* Recharts Bar Styling */
+.recharts-wrapper .recharts-bar {
+  fill: #d8b4fe;
+  transition: fill 0.3s ease;
+}
+
+.recharts-wrapper .recharts-bar:hover {
+  fill: #c084fc;
+  cursor: pointer;
+}
+/* Charts Row Layout */
+.charts-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 30px;
+}
+
+/* Individual Chart Container */
+.chart-container {
+  flex: 1;
+  min-width: 350px;
+  max-width: 48%;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+}
+
+.chart-container h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #e9d5ff;
+  margin-bottom: 16px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .dashboard h1 {
+    font-size: 2rem;
+  }
+
+  .analyze-btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+
+  .dashboard p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .trending-chart-container h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Animated Background */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* Dashboard.css */

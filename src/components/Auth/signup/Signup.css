@@ -1,0 +1,148 @@
+/* Signup Container */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e1e2f, #6a0dad, #f4f4f8);
+  background-size: 300% 300%;
+  animation: gradientMove 12s ease infinite;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Signup Form */
+.signup-form {
+  width: 100%;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 0.8s ease-in-out;
+  color: #fff;
+  text-align: center;
+}
+
+/* Form Header */
+.signup-form h1 {
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+/* Labels and Inputs */
+.signup-form label {
+  display: block;
+  color: #ddd;
+  font-weight: 600;
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+.signup-form input,
+.signup-form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border: 1px solid #8e44ad;
+  background: rgba(255, 255, 255, 0.07);
+  color: white;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.signup-form input::placeholder,
+.signup-form select {
+  color: #ccc;
+}
+
+.signup-form input:focus,
+.signup-form select:focus {
+  border-color: #ffffff;
+  box-shadow: 0 0 8px #b185f0;
+}
+
+/* Error Text */
+.signup-form span {
+  font-size: 13px;
+  color: #ff9494;
+  display: block;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+/* Button */
+.signup-button button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #8e44ad, #6a0dad);
+  color: white;
+  border: none;
+  font-size: 18px;
+  border-radius: 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.signup-button button:hover {
+  background: #5e2b9e;
+}
+
+/* Redirect Link */
+.login {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.login a {
+  color: #d8b4ff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login a:hover {
+  text-decoration: underline;
+}
+
+/* Animations (already declared globally, kept for reference) */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .signup-form {
+    padding: 30px 20px;
+  }
+
+  .signup-form h1 {
+    font-size: 26px;
+  }
+}

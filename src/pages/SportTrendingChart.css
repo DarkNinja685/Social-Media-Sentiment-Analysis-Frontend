@@ -1,0 +1,65 @@
+.sports-chart-container {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(
+    to right,
+    #0f2027,
+    #203a43,
+    #2c5364
+  ); /* Nice dark gradient */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sports-chart-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00bcd4;
+}
+
+.sports-chart-wrapper {
+  width: 90%;
+  height: 70%;
+}
+.sports-chart-container {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sports-chart-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ff9800;
+}
+
+.sports-chart-wrapper {
+  width: 90%;
+  height: 70%;
+}
+.sports-chart-container {
+  width: 100%;
+  margin: 0;
+  padding: 40px 0;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

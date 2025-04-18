@@ -1,0 +1,92 @@
+/* Form.css */
+
+/* General card styling */
+.card {
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* Header styling */
+.card-header {
+  background-color: #17a2b8;
+  color: #fff;
+  padding: 10px 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Form labels */
+.form-label {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Input fields */
+.form-control,
+.form-select {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 10px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #17a2b8;
+  box-shadow: 0 0 5px rgba(23, 162, 184, 0.5);
+  outline: none;
+}
+
+/* Input group styling */
+.input-group-text {
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+}
+
+/* Validation feedback */
+.valid-feedback {
+  color: #28a745;
+}
+
+.invalid-feedback {
+  color: #dc3545;
+}
+
+/* Checkbox */
+.form-check-input {
+  margin-right: 10px;
+}
+
+.form-check-label {
+  color: #333;
+}
+
+/* Button styling */
+.btn-info {
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-info:hover {
+  background-color: #138496;
+}
+
+/* Card footer */
+.card-footer {
+  text-align: center;
+  padding: 15px 0;
+  border-top: 1px solid #d1d1d1;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}

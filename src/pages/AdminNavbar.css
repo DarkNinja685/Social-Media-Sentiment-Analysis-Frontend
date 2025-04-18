@@ -1,0 +1,66 @@
+.admin-navbar {
+  height: 60px;
+  background-color: #000;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1001;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin-right: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a,
+.logout-btn {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.logout-btn:hover,
+.nav-links a:hover {
+  color: #ddd;
+}
+
+/* ✅ Fix logout alignment */
+.logout-btn {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: inherit;
+  display: inline-block;
+}
